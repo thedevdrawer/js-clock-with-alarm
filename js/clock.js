@@ -46,6 +46,9 @@ class Clock {
 	 * Play alarm when the time matches the alarm time
 	 */
 	playAlarm() {
+		/**
+		In order to use the audio element with modern browser policies, you must have a user interaction. If you are using this as a personal alarm, you can simply "Allow Audio" in your site settings within your browser. If you are using this as a public alarm, you will need to add a button to the page that will allow the user to interact with the audio element. 
+		 */
 		this.alarmAudio.currentTime = 0; // reset audio to start
 		this.alarmAudio.muted = false; // unmute audio
 		this.alarmAudio.volume = 0.5; // set volume
